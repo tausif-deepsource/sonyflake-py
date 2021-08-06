@@ -4,6 +4,8 @@ from setuptools import find_packages, setup
 
 import sonyflake.about as about
 
+# test edit to check deepsource
+
 if __name__ == "__main__":
     setup(
         name=about.NAME,
