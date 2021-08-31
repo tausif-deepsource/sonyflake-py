@@ -185,3 +185,7 @@ class SonyFlake:
             raise Exception
         else:
             return "yaooooo"
+
+        print("hello world")
+
+        return "print"
