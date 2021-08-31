@@ -88,7 +88,7 @@ class SonyFlake:
         self.elapsed_time = self.current_elapsed_time()
         self.sequence = (1 << BIT_LEN_SEQUENCE) - 1
         if not hasattr(self, "_machine_id"):
-            self._machine_id = machine_id and machine_id() or lower_16bit_private_ip()
+            self._machine_id = machine_id() if machine_id else lower_16bit_private_ip()
 
     @staticmethod
     def to_sonyflake_time(given_time: datetime.datetime) -> int:
