@@ -173,3 +173,15 @@ class SonyFlake:
             "sequence": sequence,
             "machine_id": machine_id,
         }
+
+    def test_func(self, a, b, c, d):
+        hello = "hello world"
+        boo = "hello world this is cool"
+        yellow = boo + a + b + c + d
+
+        if a > b:
+            return "hoooooo"
+        elif c < a:
+            raise Exception
+        else:
+            return "yaooooo"
